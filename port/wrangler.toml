@@ -1,0 +1,11 @@
+name = "port"
+main = "workers-site/index.js"
+compatibility_date = "2025-12-04"
+
+# Use workers-site for static assets
+type = "javascript"
+
+[site]
+bucket = "./dist"      # Vite output folder
+entry-point = "workers-site"
+
